@@ -52,7 +52,8 @@ export class MenuComponent implements OnInit {
     this.links.push({
       rota: "enviar",
       textContent: "Enviar Componet",
-      cor: "nav-icon far fa-circle text-success"
+      cor: "nav-icon far fa-circle text-success",
+      hexa: "#FF0000"
     });
     this.links.push({
       rota: "diretivaIf",

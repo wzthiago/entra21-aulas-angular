@@ -16,6 +16,8 @@ import { ReceberDadosComponent } from './receber-dados/receber-dados.component';
 import { EnviarComponent } from './enviar/enviar.component';
 import { DiretivaIfComponent } from './diretiva-if/diretiva-if.component';
 import { DiretivaForComponent } from './diretiva-for/diretiva-for.component';
+import { LoginComponent } from './login/login.component';
+import { SegurancaService } from './seguranca.service';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,14 @@ import { DiretivaForComponent } from './diretiva-for/diretiva-for.component';
     EnviarComponent,
     DiretivaIfComponent,
     DiretivaForComponent,
+    LoginComponent,
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SegurancaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
