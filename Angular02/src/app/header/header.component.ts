@@ -8,13 +8,13 @@ import { SegurancaService } from '../seguranca.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
- 
+
   constructor(private router: Router, private seguranca: SegurancaService) { }
 
   ngOnInit(): void {
   }
 
-  sair(): void{
+  sair(): void {
     this.seguranca.entrou = false;
     this.router.navigateByUrl("");
   }
