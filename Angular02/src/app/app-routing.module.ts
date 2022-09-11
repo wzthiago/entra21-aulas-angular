@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 import { DiretivaForComponent } from './diretivas/diretiva-for/diretiva-for.component';
 import { DiretivaIfComponent } from './diretivas/diretiva-if/diretiva-if.component';
 import { EnviarComponent } from './enviar/enviar.component';
@@ -17,7 +18,6 @@ const routes: Routes = [
   {path: "vaiPagina", component: PaginaComponent, canActivate:[SegurancaService]},
   {path: "outroComponente", component: OutroComponent, canActivate:[SegurancaService]},
   {path: "", component: LoginComponent},
-  // {path: "**", component: LoginComponent},
   {path: "inicio", component: InicioComponent, canActivate:[SegurancaService]},
   {path: "property", component: PropertyComponent, canActivate:[SegurancaService]},
   {path: "event", component: EventComponent, canActivate:[SegurancaService]},
@@ -27,6 +27,8 @@ const routes: Routes = [
   {path: "diretivaIf", component: DiretivaIfComponent, canActivate:[SegurancaService]},
   {path: "diretivaFor", component: DiretivaForComponent, canActivate:[SegurancaService]},
   {path: "login", component: LoginComponent},
+  {path: "consumindoApi", component: ConsumindoApiComponent, canActivate:[SegurancaService]},
+  {path: "**", component: LoginComponent},
 ];
 
 @NgModule({

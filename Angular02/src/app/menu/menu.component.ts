@@ -65,6 +65,12 @@ export class MenuComponent implements OnInit {
       textContent: "Diretiva For",
       cor: "nav-icon far fa-circle text-danger"
     });
+    this.links.push({
+      rota: "consumindoApi",
+      textContent: "Consumindo Api",
+      cor: "nav-icon far fa-circle text-danger"
+    });
+    
   }
 }
 
