@@ -6,6 +6,10 @@
             <div class="card-footer">
                 <button class="btn btn-outline-info" (click)="buscarPokemon()">Pokemon</button>
                 <button class="btn btn-outline-info" (click)="buscarTypes()">Tipo Pokemon</button>
+                <input type="text" [(ngModel)]="email">
+                <input type="password" [(ngModel)]="senha">
+                <button class="btn btn-outline-info" (click)="login()">Login</button>
+                <button class="btn btn-outline-info" (click)="register()">Register</button>
             </div>
         </div>
     </div>
